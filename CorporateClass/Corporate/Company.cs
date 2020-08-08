@@ -12,7 +12,13 @@ namespace CorporateClass.Corporate
 
         // Create a private property for holding a collection of current employees
         private List<Employee> Employees = new List<Employee>();
+        /*
+            Create a constructor method that accepts two arguments:
+                1. The name of the company
+                2. The date it was created
 
+            The constructor will set the value of the public properties
+        */
         public Company(string name)
         {
             Name = name;
@@ -43,14 +49,5 @@ namespace CorporateClass.Corporate
                 }
             }
         }
-        /*
-            Create a constructor method that accepts two arguments:
-                1. The name of the company
-                2. The date it was created
-
-            The constructor will set the value of the public properties
-        */
- 
-
     }
 }
