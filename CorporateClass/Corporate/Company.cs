@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace CorporateClass.Corporate
 {
@@ -22,7 +22,7 @@ namespace CorporateClass.Corporate
         // Create a method that allows a caller to add an employee
         public void addEmployee(string name, string jobTitle, DateTime date)
         {
-           Employees.Add( new Employee { Name = name, JobTitle = jobTitle, Date = date } );
+           Employees.Add( new Employee { Name = name, JobTitle = jobTitle, HiringDate = date } );
         }
         // Create a method that allows a caller to remove an employee
         public void removeEmployee(string name)
@@ -32,9 +32,15 @@ namespace CorporateClass.Corporate
         // Create a method that allows a caller to retrieve the list of employees
         public void getAllEmployees()
         {
+            Employee last = Employees.Last();
             foreach (Employee anEmployee in Employees)
             {
-                Console.WriteLine($"{anEmployee.Name}");
+                Console.WriteLine($"{anEmployee.Name}, {anEmployee.JobTitle}, {anEmployee.HiringDate}");
+
+                if (anEmployee.Equals(last))
+                {
+                    Console.WriteLine("\r\n");
+                }
             }
         }
         /*

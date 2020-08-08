@@ -10,6 +10,6 @@ namespace CorporateClass.Corporate
 
         public string JobTitle { get; set; }
 
-        public DateTime Date { get; set; }
+        public DateTime HiringDate { get; set; }
     }
 }
