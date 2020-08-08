@@ -32,12 +32,12 @@ namespace CorporateClass.Corporate
         // Create a method that allows a caller to retrieve the list of employees
         public void getAllEmployees()
         {
-            Employee last = Employees.Last();
+
             foreach (Employee anEmployee in Employees)
             {
                 Console.WriteLine($"{anEmployee.Name}, {anEmployee.JobTitle} was hired on: {anEmployee.HiringDate}");
 
-                if (anEmployee.Equals(last))
+                if (anEmployee.Equals(Employees.Last()))
                 {
                     Console.WriteLine("\r\n");
                 }
