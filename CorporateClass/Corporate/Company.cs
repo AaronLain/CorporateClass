@@ -38,7 +38,6 @@ namespace CorporateClass.Corporate
         // Create a method that allows a caller to retrieve the list of employees
         public void getAllEmployees()
         {
-
             foreach (Employee anEmployee in Employees)
             {
                 Console.WriteLine($"{anEmployee.Name}, {anEmployee.JobTitle} was hired on: {anEmployee.HiringDate}");
