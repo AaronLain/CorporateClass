@@ -35,7 +35,7 @@ namespace CorporateClass.Corporate
             Employee last = Employees.Last();
             foreach (Employee anEmployee in Employees)
             {
-                Console.WriteLine($"{anEmployee.Name}, {anEmployee.JobTitle}, {anEmployee.HiringDate}");
+                Console.WriteLine($"{anEmployee.Name}, {anEmployee.JobTitle} was hired on: {anEmployee.HiringDate}");
 
                 if (anEmployee.Equals(last))
                 {
