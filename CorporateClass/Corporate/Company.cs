@@ -22,7 +22,7 @@ namespace CorporateClass.Corporate
         public Company(string name)
         {
             Name = name;
-            CreatedOn = DateTime.Now.AddYears(-32);
+            CreatedOn = DateTime.Now.AddDays(-12).AddYears(-32);
         }
 
         // Create a method that allows a caller to add an employee
